@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pay Per Click</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/221/733/original/abstract-flowing-light-ombre-gradient-background-free-video.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 5910px;
+            width: 100%;
+        }
+        header{
+            height: 130px;
+            width: 100%;
+            background-color: rgb(116, 98, 163,0.6);
+            border:2px solid black;
+            border-radius: 15px;
+            z-index: 12;
+            position: fixed;
+        }
+        .upper{
+            width: 1170px;
+            margin-left: 1290px;
+        }
+        .logo {
+            width: 30px;
+            line-height: 100px;
+        }
+        .logo img{
+            height: 110px;
+            width: 180px;
+            position: relative;
+            top: 10px;
+        }
+        nav {
+            float: right;
+        }
+        nav .elementor-button {
+            height: 50px;
+            width: 175px;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(22, 120, 212);
+            border-radius: 8px;
+            border: 0.5px solid rgb(22, 120, 212);
+            position: relative;
+            bottom: 115px;
+            right: 2255px;
+            cursor: pointer;
+        }
+        nav .elementor-button:hover {
+            color: red;
+            background-color:rgb(124, 207, 15);
+        }
+        .box1{
+            height: 290px;
+            width: 1300px;
+            position: relative;
+            left: 90px;
+            top: 180px;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/430/833/small/abstract-colorful-dark-blue-and-purple-gradient-blurred-background-night-sky-gradient-blue-gradation-wallpaper-for-background-themes-abstract-background-in-purple-and-blue-tones-web-design-banner-vector.jpg');
+            background-size: cover;
+            opacity: 0.8;
+            border: 2px dotted pink;
+            border-radius: 15px;
+            animation-name: slide1;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+        }
+        @keyframes slide1{
+            from{
+                top: 0px;
+            }
+            to{
+                top: 180px;
+            }
+        }
+        h4{
+            font-size: 50px;
+            font-family:sans-serif;
+            font-weight: 500;
+            text-align: center;
+            color: rgb(255, 255, 0);
+            padding-top: 75px;
+            animation-name: swipeup;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+        }
+        @keyframes swipeup {
+            from{
+                font-size: 0;
+            }
+            top{
+                font-size:50px;
+            }
+        } 
+        .h3-1{
+            font-size: 33px;
+            font-family:sans-serif;
+            font-weight: 500;
+            text-align: center;
+            color: white;
+            padding-top: 30px; 
+        }
+        h5{
+            font-size: 40px;
+            font-family: sans-serif;
+            color: rgb(130, 233, 14);
+            padding-top: 330px;
+            padding-left: 70px;
+        }
+        .picture1{
+            height: 440px;
+            width: 680px;
+            position: relative;
+            left: 800px;
+            bottom: 90px;
+            border-radius: 15px;
+            opacity: 0.8;
+        }
+        .heading{
+            height: 160px;
+            width: 650px;
+            position: relative;
+            bottom: 15px;
+        }
+        .text1{
+            font-size: 22px;
+            font-family: sans-serif;
+            color: white;
+            position: relative;
+            bottom: 380px;
+            padding-left: 70px;
+        }
+        .button1{
+            height: 50px;
+            width: 165px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+            background-color:rgb(22, 120, 212);
+            border: 0.5px solid rgb(22, 120, 212);
+            border-radius: 8px;
+            position: relative;
+            left: 70px;
+            bottom: 340px;
+        }
+        .button1:hover{
+            color: red;
+            background-color:rgb(124, 207, 15);
+        }
+        .box2{
+            height: 1050px;
+            width: 1480px;
+            position: relative;
+            bottom: 250px;
+            left: 5px;
+            color: white;
+            background-image: url('https://img.freepik.com/free-vector/blue-abstract-background_78370-97.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706832000&semt=ais');
+            background-size: cover;
+            opacity: 0.8;
+        }
+        .h3-2{
+            color:rgb(130, 233, 14);
+            font-size: 40px;
+            font-family: sans-serif;
+            padding-top: 40px;
+            padding-left: 40px;
+            animation-name: slide2;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide2{
+            from{
+                padding-left: 0;
+            }
+            to{
+                padding-left: 40px;
+            }
+        }
+        .text2{
+            color:white;
+            font-size: 22px;
+            font-family: sans-serif;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .minibox1{
+            height: 220px;
+            width: 630px;
+            background-color: rgb(2, 2, 53,0.3);
+            border: 2px solid rgb(255,255,255,0.3);
+            border-radius: 15px;
+            position: relative;
+            left: 80px;
+            top: 80px;
+            animation-name: slide3;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide3 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 80px;
+            }
+        }
+        .miniIMG1{
+            height:70px;
+            width: 70px;
+            position: relative;
+            left: 20px;
+            top: 70px;
+            border-radius: 10px;
+        }
+        .minibox2{
+            height: 220px;
+            width: 620px;
+            background-color: rgb(2, 2, 53,0.3);
+            border: 2px solid rgb(255,255,255,0.3);
+            border-radius: 15px;
+            float: right;
+            right: 110px;
+            position: relative;
+            bottom: 142px;
+            animation-name: slide4;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide4 {
+            from{
+                right: 0;
+            }
+            to{
+                right: 110px;
+            }
+        }
+        .miniIMG2{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            left: 20px;
+            top: 70px;
+            border-radius: 10px;
+        }
+        .minibox3{
+            height: 240px;
+            width: 630px;
+            background-color: rgb(2, 2, 53,0.3);
+            border: 2px solid rgb(255,255,255,0.3);
+            border-radius: 15px;
+            position: relative;
+            left: 80px;
+            top: 120px;
+            animation-name: slide5;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide5 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 80px;
+            }
+        }
+        .miniIMG3{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            left: 20px;
+            top: 80px;
+            border-radius: 10px;
+        }
+        .minibox4{
+            height: 240px;
+            width: 620px;
+            background-color: rgb(2, 2, 53,0.3);
+            border: 2px solid rgb(255,255,255,0.3);
+            border-radius: 15px;
+            float: right;
+            right: 110px;
+            position: relative;
+            bottom: 122px;
+            animation-name: slide6;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide6 {
+            from{
+                right: 0;
+            }
+            to{
+                right: 110px;
+            }
+        }
+        .miniIMG4{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            left: 20px;
+            top: 70px;
+            border-radius: 10px;
+        }
+        .minibox5{
+            height: 180px;
+            width: 1290px;
+            background-color: rgb(2, 2, 53,0.3);
+            border: 2px solid rgb(255,255,255,0.3);
+            border-radius: 15px;
+            position: relative;
+            left: 80px;
+            top: 190px;
+            animation-name: slide7;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide7 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 80px;
+            }
+        }
+        .miniIMG5{
+            height: 80px;
+            width: 80px;
+            position: relative;
+            left: 20px;
+            top: 45px;
+            border-radius: 10px;
+        } 
+        h6{
+            font-size: 30px;
+            font-family: sans-serif;
+            color: rgb(9, 216, 206);
+            position: relative;
+            left: 120px;
+            bottom: 35px;
+        }
+        h1{
+            font-size: 30px;
+            font-family: sans-serif;
+            color: rgb(9, 216, 206);
+            position: relative;
+            left: 120px;
+            bottom: 55px; 
+        }
+        .minitext1{
+            position: relative;
+            bottom: 15px;
+            left: 120px;
+            font-size: 19px;
+            font-family: sans-serif;
+            padding-right: 120px;
+        }
+        .minitext2{
+            position: relative;
+            bottom: 15px;
+            left: 120px;
+            font-size: 19px;
+            font-family: sans-serif;
+            padding-right: 120px;
+        }
+        .minitext3{
+            position: relative;
+            bottom: 15px;
+            left: 120px;
+            font-size: 19px;
+            font-family: sans-serif;
+            padding-right: 120px;
+        }
+        .minitext4{
+            position: relative;
+            bottom: 15px;
+            left: 120px;
+            font-size: 19px;
+            font-family: sans-serif;
+            padding-right: 110px;
+        }
+        .minitext5{
+            position: relative;
+            bottom: 45px;
+            left: 120px;
+            font-size: 19px;
+            font-family: sans-serif;
+            padding-right: 120px;
+        }
+        .text3{
+            position: relative;
+            left: 620px;
+            bottom: 130px;
+            color: rgb(130, 233, 14);
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .text4{
+            text-align: center;
+            position: relative;
+            bottom: 100px;
+            color: white;
+            font-size: 40px;
+            font-family: sans-serif;
+            animation-name: slide8;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide8 {
+            from{
+                font-size: 0;
+            }
+            to{
+                font-size: 40px;
+            }
+        }
+        .box3{
+            height: 300px;
+            width: 630px;
+            position: relative;
+            left: 70px;
+            bottom: 295px;
+            border: 2px solid yellow;
+            border-radius: 15px;
+            animation-name: slide9;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide9 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 70px;
+            }
+        }
+        .box3:hover{
+            box-shadow: 0 0 20px yellow;
+        }
+        .box4{
+            height: 300px;
+            width: 630px;
+            float: right;
+            right: 120px;
+            position: relative;
+            bottom: 597px;
+            border: 2px solid yellow;
+            border-radius: 15px;
+            animation-name: slide10;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide10 {
+            from{
+                right: 0;
+            }
+            to{
+                right: 120px;
+            }
+        }
+        .box4:hover{
+            box-shadow: 0 0 20px yellow;
+        }
+        .box5{
+            height: 320px;
+            width: 630px;
+            position: relative;
+            left: 70px;
+            bottom: 255px;
+            border: 2px solid yellow;
+            border-radius: 15px;
+            animation-name: slide11;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide11 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 70px;
+            }
+        }
+        .box5:hover{
+            box-shadow: 0 0 20px yellow;
+        }
+        .box6{
+            height: 320px;
+            width: 630px;
+            float: right;
+            right: 120px;
+            position: relative;
+            bottom: 576px;
+            border: 2px solid yellow;
+            border-radius: 15px;
+            animation-name: slide12;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide12 {
+            from{
+                right: 0;
+            }
+            to{
+                right: 120px;
+            }
+        }
+        .box6:hover{
+            box-shadow: 0 0 20px yellow;
+        }
+        .box3text1{
+            font-size: 27px;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 45px;
+            color: white;
+        }
+        .box3text2{
+            font-size: 21px;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: white;
+        }
+        .img1{
+            height: 90px;
+            width: 100px;
+            position: relative;
+            left: 270px;
+            top: 30px;
+        }
+        .img2{
+            height: 90px;
+            width: 100px;
+            position: relative;
+            left: 270px;
+            top: 30px;
+        }
+        .box4text1{
+            font-size: 27px;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 45px;
+            color: white;
+        }
+        .box4text2{
+            font-size: 21px;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: white;
+        }
+        .img3{
+            height: 90px;
+            width: 100px;
+            position: relative;
+            left: 270px;
+            top: 30px;
+        }
+        .box5text1{
+            font-size: 27px;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 55px;
+            color: white;
+        }
+        .box5text2{
+            font-size: 21px;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: white;
+        }
+        .img4{
+            height: 90px;
+            width: 100px;
+            position: relative;
+            left: 270px;
+            top: 25px;
+        }
+        .box6text1{
+            font-size: 27px;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            color: white;
+        }
+        .box6text2{
+            font-size: 21px;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: white;
+        }
+        .text5{
+            color: white;
+            font-size: 40px;
+            font-family: sans-serif;
+            position: relative;
+            top: 840px;
+            text-align: center;
+        } 
+        .text5:hover{
+            font-size: 45px;
+            transition:linear;
+            transition-timing-function:steps(2);
+            text-decoration: underline rgb(216, 216, 8);
+            color: rgb(216, 216, 8);
+        }
+        .slider{
+            height: 250px;
+            margin: auto;
+            position: relative;
+            top: 900px;
+            width: 90%;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+        }
+        .slide-track{
+            display: flex;
+            width: calc(250px * 18);
+            animation: scroll 120s linear infinite;
+            height: 320px;
+            width: 1500px;
+            padding-left:50px;
+            padding-bottom: 65px;
+            background-color: rgba(168, 131, 216, 0.2);
+            border: 1px dotted white;
+            border-radius: 9px;
+            position: relative;
+            top: 40px;
+            left: 38px;
+        }
+        .slide-track:hover{
+            animation-play-state: paused;
+        }
+        @keyframes scroll {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(calc(-250px * 9));
+            }
+        }
+        .pic1{
+            height: 250px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 270px;
+            padding-left: 50px;
+            perspective: 100px;
+        }
+        .pic2{
+            height: 250px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 270px;
+            padding-left: 50px;
+            perspective: 100px;
+        }
+        img{
+            transition: transform 20s;
+        }
+        img:hover{
+            transform: translateZ(20px);
+        }
+        .slider::before,
+        .slider::after {
+            background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+            content: '';
+            height: 100%;
+            position: relative;
+            width: 15%;
+            z-index: 2;
+        }
+        .slider::before{
+            left: 0;
+            top: 0;
+        }
+        .slider::after{
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        } 
+        .text6{
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 440px;
+            float: right;
+            right: 50px;
+        }
+        .text7{
+            color:rgb(130, 233, 14);
+            font-size: 45px;
+            font-family: sans-serif;
+            height: 200px;
+            width: 800px;
+            position: relative;
+            top: 430px;
+            left: 350px;
+        }
+        #text7{
+            position: relative;
+            bottom: 20px;
+            animation-name: size2;
+            animation-duration: 2s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+            animation-delay: 3s;
+        }
+        @keyframes size2 {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 20px;
+            }
+        }
+        .box7{
+            height: 300px;
+            width: 670px;
+            position: relative;
+            top: 523px;
+            left: 50px;
+            border:2px solid yellow;
+            border-radius: 15px;
+            animation-name: slide13;
+            animation-duration: 3s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide13 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 50px;
+            }
+        }
+        .boximg1{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 110px;
+            left: 30px;
+        }
+        .box7text1{
+            font-size: 40px;
+            font-family: sans-serif;
+            padding-left:165px;
+            position: relative;
+            bottom: 60px;
+            color: rgb(9, 216, 206);
+        }
+        .box7text2{
+            font-size: 22px;
+            font-family: sans-serif;
+            padding-left: 165px;
+            padding-right: 35px;
+            position: relative;
+            bottom: 40px;
+            color: white;
+        }
+        .box8{
+            height: 300px;
+            width: 670px;
+            position: relative;
+            top: 220px;
+            left: 760px;
+            border:2px solid yellow;
+            border-radius: 15px;
+            animation-name: slide14;
+            animation-duration: 3s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide14 {
+            from{
+                top: 100px;
+            }
+            to{
+                top: 220px;
+            }
+        }
+        .boximg2{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 110px;
+            left: 30px;
+        }
+        .box8text1{
+            font-size: 40px;
+            font-family: sans-serif;
+            padding-left:165px;
+            position: relative;
+            bottom: 60px;
+            color: rgb(9, 216, 206);
+        }
+        .box8text2{
+            font-size: 22px;
+            font-family: sans-serif;
+            padding-left: 165px;
+            padding-right: 35px;
+            position: relative;
+            bottom: 40px;
+            color: white;
+        }
+        .box9{
+            height: 310px;
+            width: 670px;
+            position: relative;
+            top: 272px;
+            left: 50px;
+            border:2px solid yellow;
+            border-radius: 15px;
+            animation-name: slide15;
+            animation-duration: 3s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide15 {
+            from{
+                top: 0;
+            }
+            to{
+                top: 272px;
+            }
+        }
+        .boximg3{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 110px;
+            left: 30px;
+        }
+        .box9text1{
+            font-size: 40px;
+            font-family: sans-serif;
+            padding-left:165px;
+            position: relative;
+            bottom: 60px;
+            color: rgb(9, 216, 206);
+        }
+        .box9text2{
+            font-size: 22px;
+            font-family: sans-serif;
+            padding-left: 165px;
+            padding-right: 35px;
+            position: relative;
+            bottom: 40px;
+            color: white;
+        }
+        .box10{
+            height: 310px;
+            width: 670px;
+            position: relative;
+            bottom: 40px;
+            left: 760px;
+            border:2px solid yellow;
+            border-radius: 15px;
+            animation-name: slide16;
+            animation-duration: 3s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        } 
+        @keyframes slide16 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 760px;
+            }
+        }
+        .boximg4{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 110px;
+            left: 30px;
+        }
+        .box10text1{
+            font-size: 40px;
+            font-family: sans-serif;
+            padding-left:165px;
+            position: relative;
+            bottom: 60px;
+            color: rgb(9, 216, 206);
+        }
+        .box10text2{
+            font-size: 22px;
+            font-family: sans-serif;
+            padding-left: 165px;
+            padding-right: 35px;
+            position: relative;
+            bottom: 40px;
+            color: white;
+        }
+        .box11{
+            height: 160px;
+            width: 600px;
+            line-height: 55px;
+            text-align: center;
+            position: relative;
+            left: 450px;
+            bottom: 310px;
+            color: rgb(130, 233, 14);
+            font-size: 32px;
+            font-family: sans-serif;
+            animation-name: slide17;
+            animation-duration: 3s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        } 
+        @keyframes slide17 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 450px;
+            }
+        }
+        .box12{
+            height: 50px;
+            width: 750px;
+            line-height: 30px;
+            text-align: center;
+            position: relative;
+            left: 360px;
+            bottom: 340px;
+            color: white;
+            font-size: 22px;
+            font-family: sans-serif;
+            animation-name: slide18;
+            animation-duration: 3s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        } 
+        @keyframes slide18 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 360px;
+            }
+        }
+        .button2{
+            height: 50px;
+            width: 275px;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(22, 120, 212);
+            border-radius: 8px;
+            border: 0.5px solid rgb(22, 120, 212);
+            position: relative;
+            top: 430px;
+            left: 600px;
+            cursor: pointer;
+            animation-name: slide19;
+            animation-duration: 3s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        } 
+        @keyframes slide19 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 600px;
+            }
+        }
+        .button2:hover{
+            color: red;
+            background-color:rgb(124, 207, 15);
+        }
+       .image7{
+            height: 120px;
+            width: 180px;
+            position: relative;
+            top: 640px;
+            left: 55px;
+        }
+        .image8{
+            height:50px;
+            width:50px;
+            position: relative;
+            top: 710px;
+            right: 130px;
+        }
+        .image9{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: 710px;
+            right: 120px;
+        }
+        .image10{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: 710px;
+            right:115px;
+        }
+        .image11{
+            height:50px;
+            width: 50px;
+            position: relative;
+            top: 710px;
+            right: 110px;
+        }
+        .box13{
+            height: 250px;
+            width: 250px;
+            position: relative;
+            left: 900px;
+            top: 500px;
+        }
+        .text15{
+            color: rgb(130, 233, 14);
+            font-size: 30px;
+            font-family: sans-serif;
+            position: relative;
+            right: 50px;
+            bottom: 250px;
+        }
+       .text15-1{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 50px;
+            bottom: 225px;
+        }
+        .text15-1:hover{
+            color: rgb(176, 235, 15);
+        }
+         .text15-2{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 50px;
+            bottom: 210px;
+        }
+        .text15-2:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text15-3{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 50px;
+            bottom: 193px;
+        }
+        .text15-3:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text15-4{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 50px;
+            bottom: 176px;
+        }
+        .text15-4:hover{
+            color: rgb(176, 235, 15);
+        } 
+        .box14{
+            height: 250px;
+            width: 250px;
+            position: relative;
+            left: 300px;
+        }
+        .text14{
+            position: relative;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: rgb(130, 233, 14);
+        }
+        .text14-1{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 25px;
+        }
+        .text14-1:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text14-2{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 38px;
+        }
+        .text14-2:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text14-3{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 52px;
+        }
+        .text14-3:hover{
+            color: rgb(176, 235, 15);
+        }
+        .vertiline1{
+            height: 25px;
+            width: 1px;
+            background-color: white;
+            position: relative;
+            left: 1182px;
+            top: 510px;
+        }
+        .vertiline2{
+            height: 25px;
+            width: 1px;
+            background-color: white;
+            position: relative;
+            left: 1326px;
+            top: 487px;
+        }
+        .hrline4{
+            width: 1400px;
+            position: relative;
+            left: 45px;
+            top: 510px;
+        } 
+        .text16{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+            top: 550px;
+        }
+        .text17{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+            left: 980px;
+            top: 525px;
+            text-decoration: none;
+        }
+        .text17:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text18{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+            left: 995px;
+            top: 525px;
+            text-decoration: none;
+        }
+        .text18:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text19{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+            left: 1010px;
+            top: 525px;
+            text-decoration: none;
+        }
+        .text19:hover{
+            color: rgb(176, 235, 15);
+        }
+        section{
+            display: flex;
+            padding-left: 60px;   
+            justify-content: center;
+            align-items:center;
+        }
+        .three{
+            height: 690px;
+            width: 700px;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279180.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706140800&semt=ais');
+            border-radius: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+            position:absolute;
+            top: 0px;
+            left: 400px;
+            visibility: hidden;
+            transition: top 0.3s;
+        }
+        #result{
+            font-size: 25px;
+            font-weight: 500;
+            font-family: sans-serif;
+            color: red;
+            position: relative;
+            top: 15px;
+            left: 70px;
+        }
+        .open-it{
+            visibility: visible;
+            top: 340px;
+            margin-left:360px;
+            transform: translate(-50%,-50%);
+        }
+        .content{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-bottom: 5px;
+            font-family:serif;
+        }
+        .content2{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        .content3{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        .content4{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        input{
+            padding-left: 10px;
+            margin-left: 70px;
+            margin-top: 8px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+        }
+        .line{
+            height: 50px;
+            width: 550px;
+            font-family:serif;
+            font-size: 20px;
+        }
+        .line2{
+            height: 100px;
+            width: 540px;
+            font-family:serif;
+            font-size: 20px;
+            color: rgba(66, 64, 64, 1);
+            margin-left: 70px;
+            margin-top: 8px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+            padding-left: 10px;
+            resize: none;
+        }
+        .submit{
+            font-size: 25px;
+            font-family: serif;
+            height: 45px;
+            width: 550px;
+            background-color: rgb(27, 182, 43);
+            color: aliceblue;
+            margin-top: 20px;
+            margin-left: 70px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+        }
+        button:hover{
+            background-color: rgb(201, 201, 22);
+            color: rgb(196, 30, 30);
+        }
+        #check1{
+            margin-right: 6px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check2{
+            margin-right: 10px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check3{
+            margin-right:12px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check4{
+            margin-right:10px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        label {
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .popup{
+            width: 400px;
+            height: 240px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 53%;
+            visibility: hidden;
+            transition:transform 0.4s, top 0.4s;
+        }
+        .open-popup{
+            visibility: visible;
+            top: 40%;
+            transform:translate(-50%,-50%);
+        }
+        .popup img{
+            width: 100px;
+            border-radius: 50%;
+            margin-top: -50px;
+            box-shadow: 0 2px 4px green;
+        }
+        .popup h2{
+            font-size: 35px;
+            font-weight: 500;
+            font-family: sans-serif;
+            margin-top: 30px;
+        }
+        .popup p{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+        .popup button{
+            width: 300px;
+            height: 30px;
+            background-color: rgb(0,128,0,0.8);
+            color: white;
+            margin-top: 15px;
+            border: 0;
+            border-radius: 5px;
+            font-size: 20px;
+            box-shadow: 0 2px 4px green;
+            cursor: pointer;
+        }
+        .popup button:hover{
+            color: black;
+        }
+        .crossbtn{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 35px;
+            color:white;
+            margin-left: 650px;
+            margin-top: 10px;
+        }
+        .crossbtn:hover{
+            color: black;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="upper">
+            <div class="logo">
+                <a href="index.html"><img src="webepslogo.jfif" alt="web logo"></a>
+            </div>
+            <nav>
+                    <button class="elementor-button" onclick="openit()">GET STARTED</button>
+            </nav>
+        </div>
+        <section>
+            <form action="" name="formfill" onsubmit="return validation()">
+                <div class="three" id="two">
+                <p id="result"></p>
+            <button class="crossbtn" onclick="closeit()"> &times </button>    
+            <p class="content">NAME</p>
+            <input type="text" placeholder="ENTER NAME" name="NAME" class="line">
+            <br>
+            <p class="content2">EMAIL</p>
+            <input type="text" placeholder="ENTER EMAIL" name="EMAIL" class="line">
+            <br>
+            <p class="content3">Need Services For</p>
+            <input type="checkbox" id="check1" name="Services">
+            <label for="check1" name="Services">Website Development</label>
+    
+            <input type="checkbox" id="check2"/>
+            <label for="check2">Search Engine Optimization(SEO)</label>
+    
+            <input type="checkbox" id="check3"/>
+            <label for="check3">Pay-per-Click (PPC)</label>
+    
+            <input type="checkbox" id="check4"/>
+            <label for="check4">Social Media Marketing</label>
+            <br>
+            <p class="content4">Message</p>
+            <textarea class="line2" placeholder="ENTER MESSAGE" name="text"></textarea>
+            <br>
+            <button class="submit" onclick="openpopup()">SUBMIT</button>
+                <div class="popup" id="popup">
+                    <img src="https://cdn-icons-png.freepik.com/256/14025/14025690.png">
+                    <h2>THANK YOU!</h2>
+                    <p>Your details has been successfully submitted.</p>
+                    <button onclick="closepopup()">OK</button>
+                </div>
+            </div>
+    
+            </form>
+            </section>
+            <script src="index.js"></script>
+    </header>
+    <div class="box1">
+        <h4><b>Professional Pay-Per-Click Services</b></h4>
+        <h3 class="h3-1">Learn to boost traffic to your site with our Pay-Per-Click services.</h3>
+    </div>
+    <h5><b>Boost Your Online Presence</b></h5>
+    <img src="https://media.designrush.com/articles/280848/conversions/Google-pay-per-click-ads-details.jpg"class="picture1">
+    <div class="heading">
+    <p class="text1">Whether you’ve heard a little about PPC marketing and are curious to learn more, or you 
+        already know that you want to use PPC to market your business, but aren’t sure where to start, you’ve 
+        come to the right place.Learn and know how to do advertising and get money by just getting clicked at 
+        your website with our PPC services.</p></div>
+
+       <button class="button1" onclick="openit()">Inquire Now</button>
+    <div class="box2">
+        <h3 class="h3-2"><b>Our Pay-Per-Click Services Offers</b></h3>
+        <p class="text2">At WebEPS, we provide comprehensive PPC services to businesses of all sizes. 
+        Our team excels in making attractive websites and cost-effective online marketing strategies to take charges of their ads.</p>
+        <div class="minibox1">
+            <img src="https://previews.123rf.com/images/urfandadashov/urfandadashov1809/urfandadashov180901202/109134894-campaign-management-vector-icon-isolated-on-transparent-background-campaign-management-logo-concept.jpg" class="miniIMG1">
+            <h6><b>Campaign Management</b></h6>
+            <p class="minitext1">We provide robust campaign management tools that allow advertisers to create, edit, and manage their campaigns efficiently.Advertisers can set campaign budgets, adjust bids, schedule ad delivery and monitor campaign performance from a centralized dashboard.</p>
+        </div>
+        <div class="minibox2">
+            <img src="https://www.safetywallet.co.za/uploads/fgdfgdfdfgfdg344/Website/audience_analysis1.jpg" class="miniIMG2">
+            <h6><b>Audience Targeting</b></h6>
+            <p class="minitext2">We provide various targeting options to help advertisers reach their desired audience effectively. These options may include geographic targeting, demographic targeting, device targeting, language targeting, interest targeting, and remarketing.</p>
+        </div>
+        <div class="minibox3">
+            <img src="https://w7.pngwing.com/pngs/539/860/png-transparent-conversion-marketing-computer-icons-others-miscellaneous-angle-search-engine-optimization.png" class="miniIMG3">
+            <h6><b>Conversion Tracking</b></h6>
+            <p class="minitext3">We provide conversion tracking tools that allow advertisers to track the actions users take after clicking on their ads, such as making a purchase or signing up for a newsletter.Advertisers can set up conversion tracking codes on their websites to measure and attribute conversions to their PPC campaigns accurately.</p>
+        </div>
+        <div class="minibox4">
+            <img src="https://www.shutterstock.com/image-vector/quality-policy-vector-icon-illustration-260nw-1428806054.jpg" class="miniIMG4">
+            <h6><b>AD Quality & Policy Compliance</b></h6>
+            <p class="minitext4">We enforce ad quality guidelines and policies to ensure a positive user experience and maintain the integrity of their advertising networks. Advertisers must adhere to these policies when creating and running ads to avoid account suspension or penalties.</p>
+        </div>
+        <div class="minibox5">
+            <img src="https://w7.pngwing.com/pngs/325/555/png-transparent-performance-metric-business-evaluation-strategy-management-sales-tracking-text-measurement-logo.png" class="miniIMG5">
+            <h1><b>Perfomance Tracking and Analytics</b></h1>
+            <p class="minitext5">We offer comprehensive performance tracking and analytics tools to help advertisers measure the success of their campaigns. Advertisers can track key metrics such as clicks, impressions, click-through rates (CTR), conversions, conversion rates, cost per conversion, return on investment (ROI), and more.</p>
+        </div>
+    </div>
+    <b class="text3">WHAT MAKES US UNIQUE</b>
+    <p class="text4"><b>KEY FEATURES</b></p>
+    
+    <h3 class="text5">Join our 14,000+ happy customers</h3>
+    <br>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="pic1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7eynmE49NMlIwkDuGdQ4sHzI_W6DOet9PqN
+                5tvWg7-Q&s" height="150px" width="200px" >
+            </div>
+            <div class="pic1">
+                <img src="https://www.enlightenedlights.com/images/logos/Logo.2203091304325.png" height="150px" width="200px" >
+            </div>
+            <div class="pic1">
+                <img src="https://tapamatch.ie/wp-content/uploads/2023/03/tap.png" height="150px" width="200px">
+            </div>
+            <div class="pic1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiFj3ZtP61utAk1NUYnhE7cSVom_pAu876M_so
+                ijmujdX3wBcWygKUKexa3zMk0I5krB0&usqp=CAU" height="150px" width="200px">
+            </div>
+            <div class="pic1">
+                <img src="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/startup-logos/YNOS472942.jpg" height="150px" width="200px">
+            </div>
+            <div class="pic2">
+                <img src="https://simplyture.com/wp-content/uploads/2023/04/Simplyture-logo-vertical.png" height="150px" width="200px">
+            </div>
+        </div>
+    </div>
+
+    <div class="box3">
+        <img src="https://www.transformationmarketing.com/wp-content/uploads/2021/06/audience.jpg" class="img1">
+        <p class="box3text1"><b>Targeting Options</b></p>
+        <p class="box3text2">PPC platforms, such as Google Ads and Bing Ads, offer various targeting options to reach specific audiences based on factors like demographics, location, interests, and behavior.</p>
+    </div>
+    <div class="box4">
+        <img src="https://t3.ftcdn.net/jpg/00/66/57/70/360_F_66577059_TN8ZIWRlCFsA1HQPER7YBmiVx8FHJIGc.jpg" class="img2">
+        <p class="box4text1"><b>Keyword Targeting</b></p>
+        <p class="box4text2">Advertisers bid on keywords relevant to their products or services. When users search for those keywords, the ads may appear at the top or bottom of the search engine results page (SERP).</p>
+    </div>
+    <div class="box5">
+        <img src="https://as1.ftcdn.net/v2/jpg/01/34/35/08/1000_F_134350893_l7L2sIo6t7ZWjOJEpUpnbd5nIlGavOpW.jpg" class="img3">
+        <p class="box5text1"><b>AD Rank</b></p>
+        <p class="box5text2"> Ad position on search engine results pages is determined by a combination of bid amount, ad quality, and relevance. Advertisers with higher ad rank are more likely to have their ads shown in prominent positions.</p>
+    </div>
+    <div class="box6">
+        <img src="https://cdn-icons-png.flaticon.com/512/1458/1458546.png" class="img4">
+        <p class="box6text1"><b>Remarketing</b></p>
+        <p class="box6text2">PPC platforms offer remarketing capabilities, allowing advertisers to target users who have previously visited their website or interacted with their ads, increasing the chances of conversion.</p>
+    </div>
+    
+    <p class="text6"><b>HOW IT WORKS</b></p>
+    <div class="text7">
+    <h4 id="text7"><b>Designed to be straightforward and collaborative</b></h4>
+    </div>
+    <div class="box7">
+        <img src="https://cdn-icons-png.flaticon.com/512/1466/1466288.png" class="boximg1">
+        <p class="box7text1">AD Creation</p>
+        <p class="box7text2">Advertisers create ads that are relevant to the selected keywords. These ads typically include a headline, a description, and a link to a landing page where users can take further action, such as making a purchase or signing up for a newsletter.</p>
+    </div>
+    <div class="box8">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/41/88/icon-logo-for-bidding-business-vector-19024188.jpg" class="boximg2">
+        <p class="box8text1">Bidding</p>
+        <p class="box8text2">Advertisers bid on the selected keywords in a PPC auction system. They specify the maximum amount they are willing to pay for each click on their ad. The bid amount, along with other factors such as ad quality and relevance, determines the ad's position and visibility.</p> 
+    </div>
+    <div class="box9">
+        <img src="https://www.shutterstock.com/image-vector/placement-icon-vector-on-white-260nw-1253993227.jpg" class="boximg3">
+        <p class="box9text1">AD Placement</p>
+        <p class="box9text2">Based on the auction results, the PPC platform selects and displays ads on the search engine results page (SERP) or other relevant websites within its network. Ads are typically displayed above or below the organic search results or alongside content on partner websites.</p>
+    </div>
+    <div class="box10">
+        <img src="https://www.shutterstock.com/image-vector/logistics-optimization-icon-line-vector-260nw-2076023614.jpg" class="boximg4">
+        <p class="box10text1">Tracking & Optimization</p>
+        <p class="box10text2">Advertisers track the performance of their PPC campaigns using metrics such as clicks,impressions,click-through rates(CTR) and return on investment (ROI).They use this data to optimize their campaigns by adjusting bids, refining targeting, and improving landing pages to maximize results.</p>
+    </div>
+    
+        <button class="button2" onclick="openit()">LET'S BEGIN</button>
+    <div>
+        <a href="index.html"><img src="webepslogo.jfif" class="image7"></a>
+        <a href="https://www.instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/1362/1362894.png" class="image8"></a>
+        <a href="https://www.facebook.com"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" class="image9"></a>
+        <a href="https://www.twitter.com"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png" class="image10"></a>
+        <a href="https://www.linkedin.com"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png" class="image11"></a>
+        <div class="box13">
+            <div class="box14">
+                <h2 class="text14">Company</h2>
+                <a href="index.html" class="text14-1">About us</a><br>
+                <a href="index.html" class="text14-2">Blogs</a><br>
+                <a href="index.html" class="text14-3">Portfolio</a>
+            </div>
+        <h2 class="text15">Service</h2>
+        <a href="Webdev.html" class="text15-1">Website Development</a><br>
+        <a href="SEO.html" class="text15-2">Search Engine Optimization</a><br>
+        <a href="PPC.html" class="text15-3">Pay-Per-Click Advertising</a><br>
+        <a href="SMM.html" class="text15-4">Social Media Marketing</a>
+        </div>
+
+    <hr class="hrline4"/>
+    
+    <p class="text16">Copyright © 2023 OwlthTech, All rights reserved.</p>
+    <a href="t&c.html" class="text17">Terms and Conditions</a>
+    <a href="pp.html" class="text18">Privacy Policy</a>
+    <a href="cp.html" class="text19">Cookie Policy</a>
+
+    <div class="vertiline1"></div>
+    <div class="vertiline2"></div>
+
+    </div>
+    
+    <div class="box11">
+        <h2>Let's Connect and Propel Your Business Forward</h2>
+    </div>
+    <div class="box12">
+        <p>Contact us today to discuss your next project and explore how we can help your business thrive in the digital realm.</p>
+    </div>
+    
+</body>
+</html>
