@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebEPS Tech</title>
+    <style>
+       
+        .bg{
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/221/733/original/abstract-flowing-light-ombre-gradient-background-free-video.jpg'),
+            url('https://img.freepik.com/free-photo/blurred-soft-people-meeting-table-business-people-talking-modern-office-generative-ai_1258-150801.jpg');
+            background-position: left bottom,left top;
+            background-repeat: no-repeat,no-repeat;
+            background-size: 8925px,3640px;
+            height: 7029px;
+        }
+        @media only screen and (max-width: 30px) and (max-height:100px) {
+            html,body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 130px;
+            width: 100%;
+            background-color: rgb(116, 98, 163,0.6);
+            border-color: black;
+            border-radius: 15px;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 12;
+            position: fixed;
+        }
+        .upper {
+            width: 1170px;
+            margin-left:1290px;
+            margin-top: 8px;
+        }
+       .Mainlogo{
+            width: 30%;
+            position: relative;
+            left: 600px;
+            top: 30px;
+            line-height: 100px;
+        }
+        .Mainlogo img{
+            height: 100px;
+            position: relative;
+            left: 600px;
+            top: 30px;            
+        }
+        nav{
+            float: right;
+            line-height: 100px;
+        }
+        nav button:hover{
+            background-color: rgb(124, 207, 15);
+            color: red;
+        }
+        nav .elementor-button{
+            font-size: 18px;
+            background-color:rgb(22, 120, 212);
+            color: rgb(255, 255, 255);
+            border-color: rgb(22, 120, 212);
+            border-width: 0.5px;
+            border-style: solid;
+            border-radius: 8px;
+            height: 50px;
+            width: 175px;
+            position: relative;
+            bottom:105px;
+            right: 2260px;
+            cursor: pointer;
+        }
+        .elementor-button2{
+            font-size: 20px;
+            background-color:rgb(22, 120, 212);
+            color: rgb(255, 255, 255);
+            border-color: rgb(22, 120, 212);
+            border-width: 0.5px;
+            border-style: solid;
+            border-radius: 8px;
+            height: 60px;
+            width: 300px;
+            position: relative;
+            top: 20px;
+            left: 630px;
+            cursor:pointer;
+            animation-name: slide1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide1 {
+            from{
+                top: 0;
+            }
+            to{
+                top: 20px;
+            }
+        }
+        button:hover {
+            background-color: rgb(124, 207, 15);
+            color: red;
+        }
+        .elementor-button3 {
+            font-size: 20px;
+            background-color:rgb(22, 120, 212);
+            color: rgb(255, 255, 255);
+            border-color: rgb(22, 120, 212);
+            border-width: 0.5px;
+            border-style: solid;
+            border-radius: 2px;
+            height: 40px;
+            width: 150px;
+            position: relative;
+            top: 60px;
+            left: 50px;
+        }
+        .elementor-text{
+            height: 260px;
+            width: 750px;
+            position: relative;
+            left: 400px;
+            top: 300px;
+            animation-name: slide2;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide2 {
+            from{
+                top: 0;
+            }
+            to{
+                top: 300px;
+            }
+        }
+        .elementor-text h3{
+            font-size: 75px;
+            text-align: center;
+            font-weight: 800;
+            color:rgb(27, 13, 155);
+            line-height: 1em;
+            letter-spacing: -2px;
+            text-shadow: 2px 2px 2px black;
+        }
+        h4{
+            font-size: 35px;
+            text-align: center;
+            padding-top: 285px;
+            font-weight: 800;
+            color:rgb(27, 13, 155);
+            line-height: 1em;
+            letter-spacing: -1px;
+            text-shadow: 1px 1px 1px;
+            animation-name: slide3;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide3 {
+            from{
+                padding-top: 0;
+            }
+            to{
+                padding-top: 285px;
+            }
+        }
+        .elementor-text2{
+            padding: 0;
+            padding-top: 7px;
+            animation-name: slide4;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide4 {
+            from{
+                padding-top: 0;
+            }
+            to{
+                padding-top: 7px;
+            }
+        }
+        .elementor-text3{
+            font-size: 60px;
+            text-align: center;
+            text-decoration: underline rgb(243, 21, 243);
+            color: rgb(37, 156, 13);
+            padding-top: 200px;
+        }
+        .elementor-text3:hover{
+            text-decoration:underline rgb(245, 10, 10) ;
+            color: rgb(16, 221, 235);
+            font-size:65px;
+            transition-property:all ;
+            transition-duration: 1s;
+            transition-timing-function:ease;
+        }
+        .slider{
+            height: 250px;
+            margin: auto;
+            position: relative;
+            width: 90%;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+        }
+        .slide-track{
+            display: flex;
+            width: calc(250px * 18);
+            animation: scroll 120s linear infinite;
+            height: 320px;
+            width: 1500px;
+            padding-left:50px;
+            padding-bottom: 65px;
+            background-color: rgba(25, 27, 110, 0.5);
+            border: 1px dotted white;
+            border-radius: 9px;
+            position: relative;
+            top: 40px;
+            left: 38px;
+        }
+        .slide-track:hover{
+            animation-play-state: paused;
+        }
+        @keyframes scroll {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(calc(-250px * 9));
+            }
+        }
+        .img1{
+            height: 250px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 270px;
+            padding-left: 50px;
+            perspective: 100px;
+            mix-blend-mode: color-burn;
+        }
+        .img2{
+            height: 250px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 270px;
+            padding-left: 50px;
+            perspective: 100px;
+            
+        }
+        img{
+            transition: transform 20s;
+        }
+        img:hover{
+            transform: translateZ(20px);
+        }
+        .slider::before,
+        .slider::after {
+            background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+            content: '';
+            height: 100%;
+            position: relative;
+            width: 15%;
+            z-index: 2;
+        }
+        .slider::before{
+            left: 0;
+            top: 0;
+        }
+        .slider::after{
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+        .elementor-text4{
+            font-size: 30px;
+            padding-top: 200px;
+            padding-left: 50px;
+            color:rgb(189, 255, 9);
+            font-family: Arial, Helvetica, sans-serif;
+            animation-name: slide5;
+            animation-duration: 1.5s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide5 {
+            from{
+                padding-left:0;
+            }
+            to{
+                padding-left: 50px;
+            }
+        }
+        .elementor-text5{
+            height: 150px;
+            width: 650px;
+            position: relative;
+            left: 50px;
+            top: 20px;
+            font-size: 55px;
+            font-weight: 460;
+            color: white;
+            font-family: sans-serif;
+            animation-name: slide6;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide6 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 50px;
+            }
+        }
+        .elementor-text5-1 {
+            height: 80px;
+            width: 650px;
+            position: relative;
+            left: 50px;
+            font-size: 23px;
+            font-weight: 50;
+            color: white;
+            font-family: sans-serif;
+        }
+        .elementor-text5-2 {
+            font-size: 30px;
+            padding-left: 50px;
+            font-weight: 500px;
+            color: rgba(204, 17, 17, 0.822);
+            font-family: sans-serif;
+            animation-name: slide7;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide7 {
+            from{
+                font-size: 0;
+            }
+            to{
+                font-size: 30px;
+            }
+        }
+        .box{
+            height:360px;
+            width: 700px;
+            position: relative;
+            left: 720px;
+            bottom: 300px;
+            background-position: center;
+            text-align: center;
+            border-radius:20px;
+            box-shadow: 0px 0px 4px 1px black;
+            background-image: url('https://www.shutterstock.com/image-photo/abstract-blurred-group-two-business-260nw-674452579.jpg') ;
+            background-size: cover;
+            opacity: 0.9;
+            animation-name: slide8;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide8 {
+            from{
+                bottom: 150px;
+            }
+            to{
+                bottom: 300px;
+            }
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 1290px;
+            bottom: 730px;
+            background-position: center;
+            background-color:white;
+            text-align: center;
+            border-radius:50%;
+            box-shadow: 0px 0px 3px 1px black;
+            opacity: 1;
+            animation-name: slide9;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide9 {
+            from{
+                left: 890px;
+            }
+            to{
+                left: 1290px;
+            }
+        }
+        .elementor-text6{
+            padding-top: 300px;
+            font-size: 50px;
+            font-family:sans-serif;
+            color:rgb(131, 15, 15);
+            font-weight: 500;
+        }
+        .elementor-text6-1{
+            padding-top: 30px;
+            text-align: center;
+            font-size: 75px;
+            font-family:sans-serif;
+            color: rgb(22, 120, 212);
+            font-weight: 500;
+        }
+        .elementor-text6-2{
+            padding-top: 1px;
+            font-size: 25px;
+            text-align: center;
+            font-family:sans-serif;
+            color: rgb(131, 15, 15);
+            font-weight: 500;
+        }
+        .image7{
+            position: relative;
+            bottom: 292px;
+            left: 10px;
+            height: 450px;
+            width: 1480px;
+            opacity: 0.5;
+            
+        } 
+        .elementor-text7{
+            font-size: 25px;
+            font-family:sans-serif;
+            text-shadow: 1px 1px 3px;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: 655px;
+        }
+        h2{
+            font-size:58px;
+            font-family: sans-serif;
+            text-align: center;
+            color: rgb(176, 235, 15);
+            text-shadow: 2px 2px 2px;
+            position: relative;
+            bottom: 605px;
+            animation-name: slide10;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide10 {
+            from{
+                bottom: 305px;
+            }
+            to{
+                bottom: 605px;
+            }
+        }
+        .box3{
+            height: 200px;
+            width: 1200px;
+            border-radius: 7px;
+            position:relative;
+            left: 145px;
+            bottom: 495px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6b4mk6pIUoX9pHxIyd3FrSZcZ9IxAgd2TkA&usqp=CAU');
+            background-size: cover;
+            opacity: 0.5;
+        }
+        .boxtext1{
+            font-size: 50px;
+            padding-left: 100px;
+            padding-top: 55px;
+            color: black;
+            text-shadow: 2px 2px 4px black;
+            animation-name: slide11;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide11 {
+            from{
+                font-size: 0;
+            }
+            to{
+                font-size: 50px;
+            }
+        }
+        .boxtext2{
+            font-size: 30px;
+            padding-left: 74px;
+            padding-top: 1px;
+            font-family:fantasy;
+            color: black;
+        }
+        .boxtext3{
+            font-size: 50px;
+            padding-left: 520px;
+            position: relative;
+            bottom: 95px;
+            color: black;
+            text-shadow: 2px 2px 4px black;
+            animation-name: slide12;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide12 {
+            from{
+                font-size: 0;
+            }
+            to{
+                font-size: 50px;
+            }
+        }
+        .boxtext4{
+            font-size: 30px;
+            padding-left: 470px;
+            position: relative;
+            bottom: 95px;
+            color: black;
+            font-family: fantasy;
+        }
+        .boxtext5{
+            font-size: 55px;
+            padding-left: 955px;
+            position: relative;
+            bottom: 190px;
+            color: black;
+            text-shadow: 2px 2px 6px black;
+            animation-name: slide12;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide12 {
+            from{
+                font-size: 0;
+            }
+            to{
+                font-size: 50px;
+            }
+        }
+        .boxtext6{
+            font-size: 30px;
+            padding-left: 870px;
+            position: relative;
+            bottom: 195px;
+            color: black;
+            font-family: fantasy;
+        }
+        .elementor-text8 {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 350px;
+        }
+        .elementor-text9{
+            font-size: 50px;
+            color: rgb(176, 235, 15);
+            position: relative;
+            bottom: 320px;
+            padding-left: 340px;
+            animation-name: slide13;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide13 {
+            from{
+                padding-left: 0;
+            }
+            to{
+                padding-left: 340px;
+            }
+        }
+        .elementor-text9-1{
+            font-size: 50px;
+            color: rgb(176,235,15);
+            position: relative;
+            bottom: 320px;
+            padding-left: 570px;
+            animation-name: slide14;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide14 {
+            from{
+                padding-left: 0;
+            }
+            to{
+                padding-left: 570px;
+            }
+        }
+        .box4 {
+            height: 326px;
+            width: 650px;
+            position: relative;
+            left: 70px;
+            bottom: 300px;
+            border-color: yellow;
+            border-radius: 10px;
+            background-image: url('https://i.pinimg.com/736x/92/62/00/926200494705207d4ce5e5840e1bf38e.jpg');
+            background-size: cover;
+            animation-name: slide15;
+            animation-duration: 3s;
+            animation-iteration-count: 6;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide15 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 70px;
+            }
+        }
+        .box4:hover {
+            box-shadow: 0 0 10px yellow, 0 0 20px yellow;
+        }
+        .box5{
+            height: 326px;
+            width: 650px;
+            float: right;
+            right: 80px;
+            position: relative;
+            bottom: 626px;
+            
+            border-radius: 10px;
+            background-image: url('https://i.pinimg.com/736x/92/62/00/926200494705207d4ce5e5840e1bf38e.jpg');
+            background-size: cover;
+            animation-name: slide16;
+            animation-duration: 3s;
+            animation-iteration-count: 6;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide16 {
+            from{
+                right: 0;
+            }
+            to{
+                right: 80px;
+            }
+        }
+        .box5:hover {
+            box-shadow: 0 0 10px yellow, 0 0 20px yellow;
+        }
+        .box6{
+            height: 326px;
+            width: 650px;
+            position: relative;
+            left: 70px;
+            bottom: 261px;
+            border-color: yellow;
+            border-radius: 10px;
+            background-image: url('https://i.pinimg.com/736x/92/62/00/926200494705207d4ce5e5840e1bf38e.jpg');
+            background-size: cover;
+            animation-name: slide17;
+            animation-duration: 3s;
+            animation-iteration-count: 6;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide17 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 70px;
+            }
+        }
+        .box6:hover {
+            box-shadow: 0 0 10px yellow, 0 0 20px yellow;
+        } 
+        .box7{
+            height: 326px;
+            width: 650px;
+            float: right;
+            right: 80px;
+            position: relative;
+            bottom: 586px;
+            border-color: yellow;
+            border-radius: 10px;
+            background-image: url('https://i.pinimg.com/736x/92/62/00/926200494705207d4ce5e5840e1bf38e.jpg');
+            background-size: cover;
+            animation-name: slide18;
+            animation-duration: 3s;
+            animation-iteration-count: 6;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide18 {
+            from{
+                right: 0;
+            }
+            to{
+                right: 80px;
+            }
+        }
+        .box7:hover {
+            box-shadow: 0 0 10px yellow, 0 0 20px yellow;
+        }
+        .WD {
+            position: relative;
+            top: 35px;
+            left: 190px;
+            color: rgb(176, 235, 15);
+            font-size: 30px;
+            text-shadow: 1px 1px 2px;
+        }
+        .WDtext{
+            position: relative;
+            top: 60px;
+            left: 36px;
+            color: rgb(176, 235, 15);
+            font-size: 21px;
+        }
+        .WDtext2{
+            position: relative;
+            top: 65px;
+            left: 235px;
+            color: rgb(176, 235, 15);
+            font-size: 21px;
+        }
+        .SEO{
+            position: relative;
+            top: 50px;
+            padding-left: 100px;
+            color: rgb(176, 235, 15);
+            font-size: 30px;
+            text-shadow: 1px 1px 2px;
+        }
+        .SEOtext{
+            position: relative;
+            top: 75px;
+            padding-left: 55px;
+            color: rgb(176, 235, 15);
+            font-size: 21px;
+        }
+        .SEOtext2{
+            position: relative;
+            top: 80px;
+            padding-left: 250px;
+            color: rgb(176, 235, 15);
+            font-size: 21px;
+        }
+        .PPC {
+            position: relative;
+            top: 50px;
+            left: 120px;
+            color: rgb(176, 235, 15);
+            font-size: 30px;
+            text-shadow: 1px 1px 2px;
+        }
+        .PPCtext {
+            position: relative;
+            top: 75px;
+            left: 32px;
+            color: rgb(176, 235, 15);
+            font-size: 21px;
+        }
+        .PPCtext2 {
+            position: relative;
+            top: 80px;
+            left: 250px;
+            color: rgb(176, 235, 15);
+            font-size: 21px;
+        }
+        .SMM {
+            position: relative;
+            top: 50px;
+            padding-left: 170px;
+            color: rgb(176, 235, 15);
+            font-size: 30px;
+            text-shadow: 1px 1px 2px;
+        }
+        .SMMtext {
+            position: relative;
+            top: 75px;
+            padding-left: 28px;
+            color: rgb(176, 235, 15);
+            font-size: 21px;
+        }
+        .SMMtext2 {
+            position: relative;
+            top: 80px;
+            padding-left: 190px;
+            color: rgb(176, 235, 15);
+            font-size: 21px;
+        }
+        .one{
+            font-size: 30px;
+            font-family: sans-serif;
+            color: rgb(176, 235, 15);
+            position: relative;
+            bottom: 60px;
+            animation-name: change;
+            animation-duration: 2s;
+            animation-iteration-count: 6;
+            animation-timing-function: ease-out;
+        }
+        @keyframes change {
+            from{
+                font-size: 0;
+            }
+            to{
+                font-size: 30px;
+            }
+        }
+        .box8 {
+            height: 460px;
+            width: 1200px;
+            position: relative;
+            bottom: 30px;
+            left: 130px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background: linear-gradient(#003366,#cc66ff);
+            background-size: cover;
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        .review1 {
+            font-size: 25px;
+            color: rgb(176, 235, 15);
+            padding-top: 60px;
+            padding-left: 50px;
+            padding-right: 650px;
+            cursor: none;
+        }
+        .review2 {
+            font-size: 25px;
+            color: rgb(22, 245, 41);
+            padding-top: 60px;
+            position: relative;
+            bottom: 230px;
+            padding-left: 650px;
+            padding-right: 50px;
+            cursor:pointer;
+        }
+        .elementor-text11 {
+            font-size: 40px;
+            color: white;
+            position: relative;
+            bottom: 790px;
+            padding-left: 35px;
+            animation-name: slide19;
+            animation-duration: 1s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide19 {
+            from{
+                padding-left: 0;
+            }
+            to{
+                padding-left: 35px;
+            }
+        }
+        .elementor-text11-1 {
+            font-size: 45px;
+            color: yellow;
+            position: relative;
+            bottom: 790px;
+            padding-left: 35px;
+            animation-name: slide20;
+            animation-duration: 1s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide20 {
+            from{
+                padding-left: 0;
+            }
+            to{
+                padding-left: 35px;
+            }
+        }
+        .elementor-text11-2 {
+            font-size: 26px;
+            color: rgba(255,255,255,0.8) ;
+            position: relative;
+            bottom: 760px;
+            padding-left: 35px;
+            animation-name: slide21;
+            animation-duration: 1s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide21 {
+            from{
+                padding-left: 0;
+            }
+            to{
+                padding-left: 35px;
+            }
+        }
+        .box10 {
+            height: 125px;
+            width: 620px;
+            color: white;
+            background-color: pink;
+            border-radius: 20px;
+            border: 1px dotted white;
+            position: relative;
+            left: 35px;
+            bottom: 690px;
+            background-image: url('https://i.pinimg.com/originals/63/d0/6f/63d06f07ae997e1cfe777b77fa95af1f.jpg');
+            background-size: cover;
+        }
+        .box10 img{
+            height: 75px;
+            width: 77px;
+            position: relative;
+            left: 30px;
+            top: 25px;
+        }
+        .box10text {
+            color: rgb(176, 235, 15);
+            font-size: 30px;
+            padding-left: 160px;
+            position: relative;
+            bottom: 50px;
+        }
+        .box10text1 {
+            color: rgb(176, 235, 15);
+            font-size: 22px;
+            padding-left: 160px;
+            position: relative;
+            bottom: 40px;
+        }
+        .box11 {
+            height: 125px;
+            width: 620px;
+            color: white;
+            background-color: pink;
+            border-radius: 20px;
+            border: 1px dotted white;
+            position: relative;
+            left: 35px;
+            bottom: 660px;
+            background-image: url('https://i.pinimg.com/originals/63/d0/6f/63d06f07ae997e1cfe777b77fa95af1f.jpg');
+            background-size: cover; 
+        }
+        .box11 img{
+            height: 75px;
+            width: 77px;
+            position: relative;
+            left: 30px;
+            bottom: 230px;
+        }
+        .box11text {
+            color: rgb(176, 235, 15);
+            font-size: 30px;
+            padding-left: 160px;
+            position: relative;
+            bottom: 310px;
+        }
+        .box11text1 {
+            color: rgb(176, 235, 15);
+            font-size: 22px;
+            padding-left: 160px;
+            position: relative;
+            bottom: 300px;
+        }
+        .box12{
+            height: 125px;
+            width: 620px;
+            color: white;
+            background-color: pink;
+            border-radius: 20px;
+            border: 1px dotted white;
+            position: relative;
+            top: 155px;
+            background-image: url('https://i.pinimg.com/originals/63/d0/6f/63d06f07ae997e1cfe777b77fa95af1f.jpg');
+            background-size: cover;
+        } 
+        .box12 img{
+            height: 75px;
+            width: 77px;
+            position: relative;
+            left: 30px;
+            top: 25px;
+        }
+        .box12text {
+            color: rgb(176, 235, 15);
+            font-size: 30px;
+            padding-left: 160px;
+            position: relative;
+            bottom: 57px;
+        }
+        .box12text1 {
+            color: rgb(176, 235, 15);
+            font-size: 22px;
+            padding-left: 160px;
+            position: relative;
+            bottom: 51px;
+        }
+        .box13{
+            height: 125px;
+            width: 620px;
+            color: white;
+            background-color: pink;
+            border-radius: 20px;
+            border: 1px dotted white;
+            position: relative;
+            top: 185px;
+            background-image: url('https://i.pinimg.com/originals/63/d0/6f/63d06f07ae997e1cfe777b77fa95af1f.jpg');
+            background-size: cover;
+        }
+        .box13 img{
+            height: 75px;
+            width: 77px;
+            position: relative;
+            left: 30px;
+            top: 25px;
+        }
+        .box13text {
+            color: rgb(176, 235, 15);
+            font-size: 30px;
+            padding-left: 160px;
+            position: relative;
+            bottom: 60px;
+        }
+        .box13text1{
+            color: rgb(176, 235, 15);
+            font-size: 22px;
+            padding-left: 160px;
+            padding-right: 10px;
+            position: relative;
+            bottom: 55px;
+        }
+        .mainbox{
+            position: relative;
+            bottom: 550px;
+            left: 650px;
+            padding-top: 690px;
+            height:130px;
+            width: 700px;
+        }
+        .image8{
+            height: 830px;
+            width: 700px;
+            border-radius: 20px;
+            box-shadow: 2px 0px 30px cyan;
+            animation-name: slide22;
+            animation-duration: 1s;
+            animation-iteration-count: 7;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide22 {
+            from{
+                width: 100px;
+            }
+            to{
+                width: 700px;
+            }
+        } 
+        .elementor-text12 {
+            color:rgb(176, 235, 15);
+            font-size: 21px;
+            float: left;
+            left: 670px;
+            position: relative;
+            top: 1790px;
+        }
+        .elementor-text12-1 {
+            color:rgb(176, 235, 15);
+            font-size: 65px;
+            float: left;
+            left: 350px;
+            position: relative;
+            top: 1850px;
+            background: linear-gradient(135deg,#00a1ff,#00ff8f,#00a1ff,#00ff8f,#00a1ff,#00ff8f);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 8s ease-in-out infinite;
+            animation-name: slide23;
+            animation-duration: 2s;
+            animation-iteration-count: 8;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide23 {
+            from{
+                top: 1550px;
+            }
+            to{
+                top: 1850px;
+            }
+        }
+      .UE{
+            height: 220px;
+            width: 650px;
+            float: right;
+            right: 770px;
+            position: relative;
+            top: 1030px;
+            border-radius: 13px;
+            background-image: url('https://i.pinimg.com/originals/63/d0/6f/63d06f07ae997e1cfe777b77fa95af1f.jpg');
+            background-size: cover;
+            opacity: 0.7;  
+            border: 1px dotted white;
+            animation-name: slide24;
+            animation-duration: 2s;
+            animation-iteration-count: 8;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide24 {
+            from{
+                right: 470px;
+            }
+            to{
+                right: 770px;
+            }
+        }
+        .UEimg{
+            height: 80px;
+            width: 100px;
+            position: relative;
+            top: 70px;
+            left: 30px;
+        }
+        .UEtext{
+            font-size: 35px;
+            padding-left: 170px;
+            position: relative;
+            bottom: 45px;
+            color: rgb(176,235,15);
+        } 
+        .UEtext2{
+            font-size: 23px;
+            padding-left: 170px;
+            padding-right: 50px;
+            position: relative;
+            bottom: 25px;
+            color: rgb(176,235,15);
+        }
+        .RDS{
+            height: 220px;
+            width: 650px;
+            float: right;
+            right: 118px;
+            position: relative;
+            top: 1282px;   
+            border-radius: 13px;
+            background-image: url('https://i.pinimg.com/originals/63/d0/6f/63d06f07ae997e1cfe777b77fa95af1f.jpg');
+            background-size: cover;
+            opacity: 0.7;
+            border: 1px dotted white;
+            animation-name: slide25;
+            animation-duration: 2s;
+            animation-iteration-count: 8;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide25 {
+            from{
+                right: 0px;
+            }
+            to{
+                right: 118px;
+            }
+        }
+        .RDSimg{
+            height: 80px;
+            width: 100px;
+            position: relative;
+            top: 70px;
+            left: 30px;
+        }
+        .RDStext{
+            font-size: 35px;
+            padding-left: 170px;
+            position: relative;
+            bottom: 45px;
+            color: rgb(176,235,15);
+        } 
+        .RDStext2{
+            font-size: 23px;
+            padding-left: 170px;
+            padding-right: 50px;
+            position: relative;
+            bottom: 25px;
+            color: rgb(176,235,15);
+        }
+        .CCF{
+            height: 220px;
+            width: 650px;
+            position: relative;
+            top: 1030px;
+            left: 770px;   
+            border-radius: 13px;
+            background-image: url('https://i.pinimg.com/originals/63/d0/6f/63d06f07ae997e1cfe777b77fa95af1f.jpg');
+            background-size: cover;
+            opacity: 0.7;
+            border: 1px dotted white;
+            animation-name: slide26;
+            animation-duration: 2s;
+            animation-iteration-count: 8;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide26 {
+            from{
+                left: 470px;
+            }
+            to{
+                left: 770px;
+            }
+        }
+        .CCFimg{
+            height: 80px;
+            width: 100px;
+            position: relative;
+            top: 70px;
+            left: 30px;
+        }
+        .CCFtext {
+            font-size: 35px;
+            padding-left: 170px;
+            position: relative;
+            bottom: 175px;
+            color: rgb(176,235,15);
+        }
+        .CCFtext2{
+            font-size: 23px;
+            padding-left: 170px;
+            padding-right: 50px;
+            position: relative;
+            bottom: 155px;
+            color: rgb(176,235,15);
+        }
+        .IDS{
+            height: 220px;
+            width: 650px;
+            position: relative;
+            top: 1060px;
+            left: 770px;   
+            border-radius: 13px;
+            background-image: url('https://i.pinimg.com/originals/63/d0/6f/63d06f07ae997e1cfe777b77fa95af1f.jpg');
+            background-size: cover;
+            opacity: 0.7;
+            border: 1px dotted white;
+            animation-name: slide27;
+            animation-duration: 2s;
+            animation-iteration-count: 8;
+            animation-timing-function: ease-out;
+        }
+        @keyframes slide27 {
+            from{
+                left: 470px;
+            }
+            to{
+                left: 770px;
+            }
+        }
+        .IDSimg{
+            height: 80px;
+            width: 100px;
+            position: relative;
+            top: 70px;
+            left: 30px;
+        }
+        .IDStext {
+            font-size: 35px;
+            padding-left: 170px;
+            position: relative;
+            bottom: 45px;
+            color: rgb(176,235,15);
+        }
+        .IDStext2{
+            font-size: 23px;
+            padding-left: 170px;
+            padding-right: 50px;
+            position: relative;
+            bottom: 25px;
+            color: rgb(176,235,15);
+        }
+        .image9{
+            height: 120px;
+            width: 180px;
+            position: relative;
+            top: 2230px;
+            left: 55px;
+        }
+        .image10{
+            height:50px;
+            width:50px;
+            position: relative;
+            top: 2310px;
+            right: 130px;
+        }
+        .image11{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: 2310px;
+            right: 120px;
+        }
+        .image12{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: 2310px;
+            right:115px;
+        }
+        .image13{
+            height:50px;
+            width: 50px;
+            position: relative;
+            top: 2310px;
+            right: 110px;
+        }
+        .box14{
+            height: 250px;
+            width: 250px;
+            position: relative;
+            left: 900px;
+            top: 2090px;
+        }
+        .txt1{
+            color: rgb(130, 233, 14);
+            font-size: 30px;
+            font-family: sans-serif;
+            position: relative;
+            right: 50px;
+            bottom: 250px;
+        }
+       .text1-1{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 50px;
+            bottom: 225px;
+        }
+        .text1-1:hover{
+            color: rgb(176, 235, 15);
+        }
+         .text1-2{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 50px;
+            bottom: 210px;
+        }
+        .text1-2:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text1-3{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 50px;
+            bottom: 193px;
+        }
+        .text1-3:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text1-4{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            right: 50px;
+            bottom: 176px;
+        }
+        .text1-4:hover{
+            color: rgb(176, 235, 15);
+        } 
+        .box15{
+            height: 250px;
+            width: 250px;
+            position: relative;
+            left: 300px;
+        }
+        .text2{
+            position: relative;
+            top: 0px;
+            right: 5px;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: rgb(130, 233, 14);
+        }
+        .text2-1{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 25px;
+        }
+        .text2-1:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text2-2{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 38px;
+        }
+        .text2-2:hover{
+            color: rgb(176, 235, 15);
+        }
+        .text2-3{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 52px;
+        }
+        .text2-3:hover{
+            color: rgb(176, 235, 15);
+        }
+        .vertiline{
+            height: 25px;
+            width: 1px;
+            background-color: white;
+            position: relative;
+            left: 1182px;
+            top: 2150px;
+        }
+        .vertiline2{
+            height: 25px;
+            width: 1px;
+            background-color: white;
+            position: relative;
+            left: 1326px;
+            top: 2125px;
+        }
+        .hrline{
+            width: 1400px;
+            position: relative;
+            left: 45px;
+            top: 2150px;
+        } 
+        .text16{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+            top: 2200px;
+        }
+        .tc{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+            left: 980px;
+            top: 2175px;
+            text-decoration: none;
+        }
+        .tc:hover{
+            color: rgb(176, 235, 15);
+        }
+        .pp{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+            left: 995px;
+            top: 2175px;
+            text-decoration: none;
+        }
+        .pp:hover{
+            color: rgb(176, 235, 15);
+        }
+        .cp{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+            left: 1010px;
+            top: 2175px;
+            text-decoration: none;
+        }
+        .cp:hover{
+            color: rgb(176, 235, 15);
+        }
+        section{
+            display: flex;
+            padding-left: 60px;   
+            justify-content: center;
+            align-items:center;
+        }
+        .three{
+            height: 690px;
+            width: 700px;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279180.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706140800&semt=ais');
+            border-radius: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+            position:absolute;
+            top: 0px;
+            left: 400px;
+            visibility: hidden;
+            transition: top 0.3s;
+        }
+        #result{
+            font-size: 25px;
+            font-weight: 500;
+            font-family: sans-serif;
+            color: red;
+            position: relative;
+            top: 15px;
+            left: 70px;
+        }
+        .open-it{
+            visibility: visible;
+            top: 340px;
+            margin-left:360px;
+            transform: translate(-50%,-50%);
+        }
+        .content{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-bottom: 5px;
+            font-family:serif;
+        }
+        .content2{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        .content3{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        .content4{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        input{
+            padding-left: 10px;
+            margin-left: 70px;
+            margin-top: 8px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+        }
+        .line{
+            height: 50px;
+            width: 550px;
+            font-family:serif;
+            font-size: 20px;
+        }
+        .line2{
+            height: 100px;
+            width: 540px;
+            font-family:serif;
+            font-size: 20px;
+            color: rgba(66, 64, 64, 1);
+            margin-left: 70px;
+            margin-top: 8px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+            padding-left: 10px;
+            resize: none;
+        }
+        .submit{
+            font-size: 25px;
+            font-family: serif;
+            height: 45px;
+            width: 550px;
+            background-color: rgb(27, 182, 43);
+            color: aliceblue;
+            margin-top: 20px;
+            margin-left: 70px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+        }
+        button:hover{
+            background-color: rgb(201, 201, 22);
+            color: rgb(196, 30, 30);
+        }
+        #check1{
+            margin-right: 6px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check2{
+            margin-right: 10px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check3{
+            margin-right:12px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check4{
+            margin-right:10px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        label {
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .popup{
+            width: 400px;
+            height: 240px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 53%;
+            visibility: hidden;
+            transition:transform 0.4s, top 0.4s;
+        }
+        .open-popup{
+            visibility: visible;
+            top: 40%;
+            transform:translate(-50%,-50%);
+        }
+        .popup img{
+            width: 100px;
+            border-radius: 50%;
+            margin-top: -50px;
+            box-shadow: 0 2px 4px green;
+        }
+        .popup h2{
+            font-size: 35px;
+            font-weight: 500;
+            font-family: sans-serif;
+            margin-top: 30px;
+        }
+        .popup p{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+        .popup button{
+            width: 300px;
+            height: 30px;
+            background-color: rgb(0,128,0,0.8);
+            color: white;
+            margin-top: 15px;
+            border: 0;
+            border-radius: 5px;
+            font-size: 20px;
+            box-shadow: 0 2px 4px green;
+            cursor: pointer;
+        }
+        .popup button:hover{
+            color: black;
+        }
+        .crossbtn{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 35px;
+            color:white;
+            margin-left: 650px;
+            margin-top: 10px;
+        }
+        .crossbtn:hover{
+            color: black;
+            background-color: transparent;
+        }
+    </style>
+    
+</head>
+<body class="bg">
+    <div>
+        <header>
+        <div class="upper">
+            <div class="MainLogo">
+            <a href="index.html"><img src="webepslogo.jfif" alt="LOGO" height="110px" width="180px"></a>
+            </div>
+            <nav>
+                <button class="elementor-button" onclick="openit()">GET STARTED</button>
+            </nav>
+        </div>
+        <section>
+            <form action="" name="formfill" onsubmit="return validation()">
+                <div class="three" id="two">
+                <p id="result"></p>
+            <button class="crossbtn" onclick="closeit()"> &times </button>    
+            <p class="content">NAME</p>
+            <input type="text" placeholder="ENTER NAME" name="NAME" class="line">
+            <br>
+            <p class="content2">EMAIL</p>
+            <input type="text" placeholder="ENTER EMAIL" name="EMAIL" class="line">
+            <br>
+            <p class="content3">Need Services For</p>
+            <input type="checkbox" id="check1" name="Services">
+            <label for="check1" name="Services">Website Development</label>
+    
+            <input type="checkbox" id="check2"/>
+            <label for="check2">Search Engine Optimization(SEO)</label>
+    
+            <input type="checkbox" id="check3"/>
+            <label for="check3">Pay-per-Click (PPC)</label>
+    
+            <input type="checkbox" id="check4"/>
+            <label for="check4">Social Media Marketing</label>
+            <br>
+            <p class="content4">Message</p>
+            <textarea class="line2" placeholder="ENTER MESSAGE" name="text"></textarea>
+            <br>
+            <button class="submit" onclick="openpopup()">SUBMIT</button>
+                <div class="popup" id="popup">
+                    <img src="https://cdn-icons-png.freepik.com/256/14025/14025690.png">
+                    <h2>THANK YOU!</h2>
+                    <p>Your details has been successfully submitted.</p>
+                    <button onclick="closepopup()">OK</button>
+                </div>
+            </div>
+    
+            </form>
+            </section>
+            <script src="index.js"></script>
+        </header>
+        <div class="elementor-text">
+        <h3>Will Assist You for ExtraOrdinary Digital Solutions</h3>
+        </div>
+        <h4> Specialize your skills in creating innovative websites and flourish online success.</h4>
+        <h4 class="elementor-text2">Start Upgrading your business now!</h4>
+        <div>
+            <button class="elementor-button2" onclick="openit()">GET STARTED</button>
+        </div>
+        <h5 class="elementor-text3">Have a look on our Satisfied Customers!</h5>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="img1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7eynmE49NMlIwkDuGdQ4sHzI_W6DOet9PqN
+                    5tvWg7-Q&s" height="150px" width="200px" >
+                </div>
+                <div class="img1">
+                    <img src="https://www.enlightenedlights.com/images/logos/Logo.2203091304325.png" height="150px" width="200px" >
+                </div>
+                <div class="img1">
+                    <img src="https://tapamatch.ie/wp-content/uploads/2023/03/tap.png" height="150px" width="200px">
+                </div>
+                <div class="img1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiFj3ZtP61utAk1NUYnhE7cSVom_pAu876M_so
+                    ijmujdX3wBcWygKUKexa3zMk0I5krB0&usqp=CAU" height="150px" width="200px">
+                </div>
+                <div class="img1">
+                    <img src="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/startup-logos/YNOS472942.jpg" height="150px" width="200px">
+                </div>
+                <div class="img2">
+                    <img src="https://simplyture.com/wp-content/uploads/2023/04/Simplyture-logo-vertical.png" height="150px" width="200px">
+                </div>
+            </div>
+        </div>
+        <h5 class="elementor-text4">WHO WE ARE</h5>
+        <div>
+            <div class="elementor-text5">
+            <p>Authorizing Businesses with High-Tech Solutions </p>
+            </div>
+            <div class="elementor-text5-1">
+            <p>We are passionate about creating dynamic websites and 
+                implementing effective digital marketing strategies.</p></div>
+            <p class="elementor-text5-2">Discover our story.</p>
+            <a href="index.html">
+            <button class="elementor-button3">Learn More</button></a>
+            <br>
+            <div class="box">
+                <p class="elementor-text6">Let's Expand Your Business!</p>
+            </div>
+            <div class="box2">
+                <p class="elementor-text6-1">15+</p>
+                <p class="elementor-text6-2">Years of Experience</p>  
+            </div>
+            <div>
+                <img src="https://media.istockphoto.com/id/1189301950/photo/multiethnic-business-people-in-meeting.webp?b=1&s=170667a&w=0&k=20&c=_vcKC9DUY99_QHZzwbr2N1D-K4MDfQwaX2mGymvQv_o=" class="image7" height="200px" width="200px">
+                <p class="elementor-text7">We have a track record of delivering exceptional results to our clients</p>
+                <h2>Trusted by Businesses Worldwide</h2>
+                    <div class="box3">
+                        <div>
+                        <h1 class="boxtext1">14K+</h1> 
+                        <p class="boxtext2">Project Done</p>
+                        </div> 
+                        <div>
+                            <h1 class="boxtext3">6K+</h1> 
+                            <p class="boxtext4">Happy Clients</p>
+                        </div>
+                        <div>
+                            <h1 class="boxtext5">15+</h1> 
+                            <p class="boxtext6">Years of Experience</p>
+                        </div> 
+                    </div>
+                <p class="elementor-text8">WHAT WE PROVIDE</p>
+                <h5 class="elementor-text9">To do business online,</h5>
+                <h5 class="elementor-text9-1">We give assistance globally.</h5>
+                <br>
+                <div class="box4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4466/4466528.png" height="115px" width="110px"
+                     style="position: relative;top:15px;left: 280px;">
+                    <br> 
+                    <h5 class="WD">Website  Development</h5>
+                    <p class="WDtext">Create stunning and responsive websites that engage your audience</p>
+                    <p class="WDtext2">and drive conversions.</p>
+                </div>  
+                <div class="box5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/980/980351.png" height="100px" width="120px"
+                     style="position: relative;top: 25px;left: 280px;">
+                     <br>
+                     <h5 class="SEO">Search Engine Optimization (SEO) </h5>
+                     <p class="SEOtext">Boost your online visibility and organic traffic with our proven</p>
+                     <p class="SEOtext2"> SEO strategies.</p>
+                </div>
+                <div class="box6"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/4322/4322291.png" height="100px" width="100px"
+                     style="position: relative;top: 25px;left: 280px;">
+                     <br>
+                     <h5 class="PPC">Pay-Per-Click (PPC) Advertising</h5>
+                     <p class="PPCtext">Maximize your ad spend and achieve immediate results with targeted</p>
+                     <p class="PPCtext2">PPC campaigns.</p>
+                </div>
+                <div class="box7">
+                    <img src="https://riseup.media/wp-content/uploads/2022/08/social-media-bitcoin-agency.png" height="100px" width="100px"
+                    style="position: relative;top: 25px;left: 280px;">
+                    <br>
+                    <h5 class="SMM">Social Media Marketing</h5>
+                    <p class="SMMtext">Leverage the power of social media platforms to build brand awareness </p>
+                    <p class="SMMtext2">and engage your target audience.</p>
+                </div>
+                
+                <h5 class="elementor-text12">WHY CHOOSE US</h5>
+                <h5 class="elementor-text12-1">Digital Excellence</h5>
+                
+                <p class="one">REVIEWS</p>
+                <div class="box8">
+                    <h5 class="review1">Good to learn about Web Development.It helped me a lot for learning and
+                         developing a site. I could feel the effort that was put into to make sure people understood. 
+                        I like this course and I'll prefer those to choose this course who want to become a web developer.</h5> 
+                    <h5 class="review2">I would highly recommend this course to all. While I was going through this course, I had a client who paid me 40$ to do on-site optimization for her website. So, I took her website as a case study and applied all my learning from this course on her website, I improved her rankings for more than 5 keywords.</h5> 
+                        <div class="mainbox">
+                            <img src="https://elearningindustry.com/wp-content/uploads/2023/08/The-Benefits-Of-Mobile-Learning-Technology-In-The-Workplace.jpg" class="image8">
+                        </div> 
+                </div>        
+                <br>
+
+                <div>
+                    <a href="index.html"><img src="webepslogo.jfif" class="image9"></a>
+                    <a href="https://www.instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/1362/1362894.png" class="image10"></a>
+                    <a href="https://www.facebook.com"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" class="image11"></a>
+                    <a href="https://www.twitter.com"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png" class="image12"></a>
+                    <a href="https://www.linkedin.com"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png" class="image13"></a>
+                <div class="box14">
+                    <div class="box15">
+                    <p class="text2">Company</p>
+                    <a href="index.html" class="text2-1">About us</a><br>
+                    <a href="index.html" class="text2-2">Blogs</a><br>
+                    <a href="index.html" class="text2-3">Portfolio</a>
+                    </div>
+                <p class="txt1">Service</p>
+            <a href="Webdev.html" class="text1-1">Website Development</a><br>
+            <a href="SEO.html" class="text1-2">Search Engine Optimization</a><br>
+            <a href="PPC.html" class="text1-3">Pay-Per-Click Advertising</a><br>
+            <a href="SMM.html" class="text1-4">Social Media Marketing</a>
+                </div>
+
+            <hr class="hrline"/> 
+            
+            <p class="text16">Copyright © 2023 OwlthTech, All rights reserved.</p>
+            <a href="t&c.html" class="tc">Terms and Conditions</a>
+            <a href="pp.html" class="pp">Privacy Policy</a>
+            <a href="cp.html" class="cp">Cookie Policy</a>
+
+            <div class="vertiline"></div>
+            <div class="vertiline2"></div>
+
+                </div>
+            </div>
+
+            <div class="UE">
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/experience-2047182-1726110.png?f=webp" class="UEimg">
+                <h5 class="UEtext">Unparalleled Expertise</h5>
+                <p class="UEtext2">Tap into our deep industry knowledge, expertise, and cutting-edge technologies to gain a competitive edge.</p>
+            </div>
+            <div class="RDS">
+                <img src="https://cdn-icons-png.flaticon.com/512/4221/4221015.png" class="RDSimg">
+                <h5 class="RDStext">Results-Driven Strategies</h5>
+                <p class="RDStext2">Achieve measurable success with data-backed strategies and impactful digital campaigns tailored to your goals.</p>
+            </div> 
+            <div class="CCF">
+                <img src="https://s3.amazonaws.com/digitalgov/hcd-discovery-concepts.png" class="CCFimg">
+                <h5 class="CCFtext">Customer-Centric Focus</h5>
+                <p  class="CCFtext2">Your satisfaction is our priority, and we work closely with you to understand your unique needs and deliver exceptional results.</p>
+            </div>
+            <div class="IDS">
+                <img src="https://w7.pngwing.com/pngs/964/1019/png-transparent-web-development-web-design-software-development-web-developer-web-design-web-design-text-logo.png" class="IDSimg">
+                <h5 class="IDStext">Innovation that Drives Success</h5>
+                <p class="IDStext2">Stay ahead of the curve with our innovative approach that transforms your digital presence and drives remarkable outcomes.</p>
+            </div>
+            <h5 class="elementor-text11">The Finest Choice for</h5> 
+            <h5 class="elementor-text11-1">Digital Success!</h5>
+            <h5 class="elementor-text11-2">We go the extra mile to deliver outstanding results.</h5>   
+            
+            <div class="box10">
+                <img src="https://www.shutterstock.com/image-vector/customized-solutions-icon-hands-on-260nw-2387571605.jpg" alt="Customized image">
+                <p class="box10text">Customized Solutions</p>
+                <p class="box10text1">Tailored to your unique business needs</p>
+            </div>
+            <div class="box11">
+                    <div class="box12">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSilgTs72mV4olHpmj0g-WtRVyyTQDef1HWp_0rjIzdBxBqKny1vAzNGxy_1eTYEFBVGvo&usqp=CAU" alt="transparency image">
+                    <p class="box12text">Transparency</p>
+                    <p class="box12text1">Transparent communication and timely project delivery</p>
+                    </div>   
+                    <div class="box13">
+                    <img src="https://i0.wp.com/helpinghandsbehaviourtherapy.com/wp-content/uploads/2020/06/cropped-Helping-Hands-logo-textless-1.png?fit=512%2C512&ssl=1&w=640" alt="support image">
+                    <p class="box13text">Support</p>
+                    <p class="box13text1">Exceptional customer support every step of the way</p>
+                    </div>
+                <img src="https://static.vecteezy.com/system/resources/previews/006/085/697/non_2x/creative-business-team-leadership-expert-icon-free-vector.jpg" alt="team image">
+                <p class="box11text">Expert Team</p>
+                <p class="box11text1">With in-depth knowledge and experience</p>
+            </div>
+                                 
+    </div>    
+    <script>
+        function openform(){
+            document.getElementById("open-form").style.display = "block";
+        }
+    </script>
+</body>
+</html>
