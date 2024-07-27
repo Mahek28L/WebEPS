@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            display: flex;
+            padding-left: 60px;   
+            justify-content: center;
+            align-items:center;
+        }
+        .bg{
+            height: 680px;
+            width: 700px;
+            justify-content: center;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279180.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706140800&semt=ais');
+            border-radius: 10px;
+            margin-top: 20px;
+            
+        }
+        #result{
+            font-size: 25px;
+            font-weight: 500;
+            font-family: sans-serif;
+            color: red;
+            position: relative;
+            top: 15px;
+            left: 70px;
+        }
+        .content{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 5px;
+            font-family:serif;
+        }
+        .content2{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        .content3{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        .content4{
+            font-size: 25px;
+            color: white;
+            padding-left: 70px;
+            padding-top: 30px;
+            font-family:serif;
+        }
+        input{
+            padding-left: 10px;
+            margin-left: 70px;
+            margin-top: 8px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+        }
+        .text{
+            height: 50px;
+            width: 550px;
+            font-family:serif;
+            font-size: 20px;
+        }
+        .text2{
+            height: 100px;
+            width: 540px;
+            font-family:serif;
+            font-size: 20px;
+            color: rgba(66, 64, 64, 1);
+            margin-left: 70px;
+            margin-top: 8px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+            padding-left: 10px;
+            resize: none;
+        }
+        .submit{
+            font-size: 25px;
+            font-family: serif;
+            height: 45px;
+            width: 550px;
+            background-color: rgb(27, 182, 43);
+            color: aliceblue;
+            margin-top: 20px;
+            margin-left: 70px;
+            border-color: rgb(16, 27, 179);
+            border-width: 2.5px;
+            border-style: solid;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+        }
+        button:hover{
+            background-color: rgb(201, 201, 22);
+            color: rgb(196, 30, 30);
+        }
+        #check1{
+            margin-right: 6px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check2{
+            margin-right: 10px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check3{
+            margin-right:12px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        #check4{
+            margin-right:10px;
+            transform: scale(2);
+            margin-top: 15px;
+        }
+        label {
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .popup{
+            width: 400px;
+            height: 240px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 53%;
+            visibility: hidden;
+            transition:transform 0.4s, top 0.4s;
+        }
+        .open-popup{
+            visibility: visible;
+            top: 40%;
+            transform:translate(-50%,-50%);
+        }
+        .popup img{
+            width: 100px;
+            border-radius: 50%;
+            margin-top: -50px;
+            box-shadow: 0 2px 4px green;
+        }
+        .popup h2{
+            font-size: 35px;
+            font-weight: 500;
+            font-family: sans-serif;
+            margin-top: 30px;
+        }
+        .popup p{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+        .popup button{
+            width: 300px;
+            height: 30px;
+            background-color: rgb(0,128,0,0.8);
+            color: white;
+            margin-top: 15px;
+            border: 0;
+            border-radius: 5px;
+            font-size: 20px;
+            box-shadow: 0 2px 4px green;
+            cursor: pointer;
+        }
+        .popup button:hover{
+            color: black;
+        }
+        .crossbtn{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 35px;
+            color:white;
+            margin-left: 650px;
+            margin-top: 10px;
+        }
+        .crossbtn:hover{
+            color: black;
+            background-color: transparent;
+        }
+    </style>
+    <script src="index.js"></script>
+    
+</head>
+<body>
+    
+    <section>
+        <form action="" name="formfill" onsubmit="return validation()">
+        <div class="bg" id="myModal">
+            <p id="result"></p>
+        <button class="crossbtn" onclick="closecross()"> &times </button>    
+        <p class="content">NAME</p>
+        <input type="text" placeholder="ENTER NAME" name="NAME" class="text">
+        <br>
+        <p class="content2">EMAIL</p>
+        <input type="text" placeholder="ENTER EMAIL" name="EMAIL" class="text">
+        <br>
+        <p class="content3">Need Services For</p>
+        <input type="checkbox" id="check1" name="Services">
+        <label for="check1" name="Services">Website Development</label>
+
+        <input type="checkbox" id="check2"/>
+        <label for="check2">Search Engine Optimization(SEO)</label>
+
+        <input type="checkbox" id="check3"/>
+        <label for="check3">Pay-per-Click (PPC)</label>
+
+        <input type="checkbox" id="check4"/>
+        <label for="check4">Social Media Marketing</label>
+        <br>
+        <p class="content4">Message</p>
+        <textarea class="text2" placeholder="ENTER MESSAGE" name="text"></textarea>
+        <br>
+        <button class="submit" onclick="openpopup()">SUBMIT</button>
+            <div class="popup" id="popup">
+                <img src="https://cdn-icons-png.freepik.com/256/14025/14025690.png">
+                <h2>THANK YOU!</h2>
+                <p>Your details has been successfully submitted.</p>
+                <button onclick="closepopup()">OK</button>
+            </div>
+        </div>
+        </form>
+        </section>
+</body>
+</html>
